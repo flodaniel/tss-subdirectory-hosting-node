@@ -3,9 +3,20 @@
 To start the express server which serves the TSS app at /hub
 
 1. `npm i && npm run build`
-2. `cd ./server && npm i && npm run build`
+2. `cd ./server && npm i && npm run start`
 
-## Testing notes
+## Testing notes for serving static assets on subpath
+
+### vinxi dev
+
+Works as expected
+
+### in production
+
+assets are not served correctly from subpath. Can be observed as favicon is not loaded when TSS is served
+with the express app
+
+## Testing notes (previous issue)
 
 | Component     | Path                                                             |
 | ------------- | ---------------------------------------------------------------- |
